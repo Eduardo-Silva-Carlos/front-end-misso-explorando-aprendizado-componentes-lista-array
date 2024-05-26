@@ -1,9 +1,10 @@
 import './Card.css'
-export default function Card() {
+export default function Card(props) {
+    
     return (
         <div className="card">
-            <h1>Java</h1>
-            < img src="https://salvatore.academy/devmon/1_java.png" width="100" />
+            <h1>{props.name}</h1>
+            < img src={props.imagem} width="100" />
         </div>
     )
 
